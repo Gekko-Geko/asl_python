@@ -1,9 +1,8 @@
 version: '3.1'
 
 services:
-  jupy:
-    image: jupyter
-    build: jupyter/
+  jupyter:
+    image: jupyter/tensorflow-notebook:tensorflow-2.9.1
     container_name: tensorflow_notebook
     environment:
       NB_GID: 109
