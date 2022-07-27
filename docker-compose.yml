@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  jupy:
+    image: jupyter
+    build: jupyter/
+    container_name: tensorflow_notebook
+    environment:
+      NB_GID: 109
+    user: root
+    volumes:
+      - ./jupyter:/home/jovyan
+    ports:
+      - 8888:8888/tcp
+
